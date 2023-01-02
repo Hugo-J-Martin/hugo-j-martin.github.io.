@@ -41,7 +41,6 @@
       position: relative;
       width: 300px;
       height: 80px;
-      
       top: -30px;
       text-indent: -999999px;
     }
@@ -54,7 +53,8 @@
     nav li{
       display: inline-block;
       font-size: 20px;
-      margin-right: 10px;
+      margin-right: 5px;
+      margin-left: 5px;
       
     }
     
@@ -68,9 +68,11 @@
       header{
        height: 85px; 
       }
-      .featured-art{
-        display: none;
+      .featur{
+      font-size: 5px; 
       }
+      
+
     }
     
     a{
@@ -80,11 +82,19 @@
       text-decoration: underline;
     }
     
+    h1{
+     color: white;
+     text-align: center;
+     margin: 0px;
+     margin-top: 5px;
+    }
+    
     .featured-art{
-      
       color: white;
-      padding: 20px;
-      display: flex;
+      margin-bottom: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       flex-direction: column;
       text-align: center;
     }
@@ -93,53 +103,23 @@
     
     .featured-art figure {
       background: none;
-
+      color: white;
       text-transform: uppercase;
       margin: auto;
     }
     .featured-art figure img{
-      width: 400px;
-      height: 400px;
+      width: 50%;
+      height: 50%;
       border-radius: 15px;
       margin: 10px;
     }
 
-    
-    .featured-art .container {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-    }
-    .featured-art .overlay {
-      position: absolute;
-      width: 400px;
-      height: 400px;
-      border-radius: 15px;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: black;
-      margin: 10px;
-    }
-    
-    .featured-art .container:hover .overlay {
-      opacity: .5;
-    }
-    
-    .featured-art .text {
-      color: white;
-      font-size: 20px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-    }
-    figcaption{
-      background: rgb(0,0,0,.5);
-      margin-left: 100px;
-      margin-right: 100px;
-      border-radius: 30px;
-      
+    figcaption a{
+     color: white;
+     background: rgb(0,0,0,.5); 
+     margin: 10px;
+     border-radius: 30px;
+     padding: 10px;
     }
     
     
@@ -153,14 +133,21 @@
     }
     footer ul {
       list-style-type: none;
+      margin-right: 55px;
        
     }
     footer li{
       display: inline-block;
       color: white;
       font-size: 25px;
-      margin-left: 100px;
-      margin-right: 100px;
+      margin: 10px 0px;
+      padding: 10px;
+    }
+    @media screen and (max-width: 405px) {
+      footer li{
+       font-size: 20px;
+       padding: 0px;
+      }
     }
     
     .capsule {
